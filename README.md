@@ -9,7 +9,7 @@ Speex Codec in Javascript. Ported speex-1.2.0RC using emscripten tool.
 
 (Microphone loopback is only working in Firefox.)
 
- 播放网络 数据：
+ 播放网络 数据：ogg 转 wav
  
      var samples, sampleRate;
      var xhr = new XMLHttpRequest();
