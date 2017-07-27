@@ -12,8 +12,7 @@ Speex Codec in Javascript. Ported speex-1.2.0RC using emscripten tool.
 播放网络 数据：
 
 
-<code>var samples, sampleRate;
-
+  var samples, sampleRate;
   var xhr = new XMLHttpRequest();
   // xhr.overrideMimeType("audio/ogg;charset=US-ASCII");
   xhr.open("get", "https://image-public.touhaozhubo.com/video2017072415145513096056530311.spx", true);
@@ -22,7 +21,7 @@ Speex Codec in Javascript. Ported speex-1.2.0RC using emscripten tool.
     if (xhr.readyState == 4 && xhr.status == 200) {
       console.log(xhr.response);
 
-var blob =  xhr.response;
+      var blob =  xhr.response;
       var reader = new FileReader();
       reader.addEventListener("loadend", function() {
         var data = reader.result;
@@ -41,10 +40,6 @@ var blob =  xhr.response;
          // reader.result contains the contents of blob as a typed array
       });
       reader.readAsBinaryString(blob);
-
-
-
-
     }
   };
-  xhr.send(null);</code>
+  xhr.send(null);
