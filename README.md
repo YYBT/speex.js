@@ -11,7 +11,7 @@ Speex Codec in Javascript. Ported speex-1.2.0RC using emscripten tool.
 
  播放网络 数据：
  
- var samples, sampleRate;
+   var samples, sampleRate;
     var xhr = new XMLHttpRequest();
     // xhr.overrideMimeType("audio/ogg;charset=US-ASCII");
     // 下载 数据
