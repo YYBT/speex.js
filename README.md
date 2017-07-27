@@ -13,7 +13,6 @@ Speex Codec in Javascript. Ported speex-1.2.0RC using emscripten tool.
  
      var samples, sampleRate;
      var xhr = new XMLHttpRequest();
-     // xhr.overrideMimeType("audio/ogg;charset=US-ASCII");
      // 下载 数据
      xhr.open("get", "https://image-public.touhaozhubo.com/video2017072415145513096056530311.spx", true);
      // 以二进制下载 数据
