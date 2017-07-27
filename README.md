@@ -13,15 +13,12 @@ Speex Codec in Javascript. Ported speex-1.2.0RC using emscripten tool.
  
      var samples, sampleRate;
      var xhr = new XMLHttpRequest();
-     
      xhr.open("get", "https://image-public.touhaozhubo.com/video2017072415145513096056530311.spx", true);// 下载 数据
-     
      xhr.responseType = "blob";// 以二进制下载 数据
      xhr.onreadystatechange = function() {
      if (xhr.readyState == 4 && xhr.status == 200) {
        console.log(xhr.response);
        var blob =  xhr.response;
-     
        var reader = new FileReader();// 用 FileReader 读取 blob 数据
        reader.addEventListener("loadend", function() {
          var data = reader.result;
@@ -37,7 +34,6 @@ Speex Codec in Javascript. Ported speex-1.2.0RC using emscripten tool.
           // reader.result contains the contents of blob as a typed array
        });
        reader.readAsBinaryString(blob); // 将文件读取为二进制编码
-      
      }
      };
      xhr.send(null);
